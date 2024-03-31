@@ -20,7 +20,7 @@
 
   <groupId>br.org.soujava</groupId>
   <artifactId>maven-archetype-quickstart</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.1</version>
   <packaging>maven-archetype</packaging>
 
   <organization>
