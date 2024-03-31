@@ -20,7 +20,7 @@
 
   <groupId>br.org.soujava</groupId>
   <artifactId>maven-archetype-quickstart</artifactId>
-  <version>0.0.2-SNAPSHOT</version>
+  <version>0.0.1-SNAPSHOT</version>
   <packaging>maven-archetype</packaging>
 
   <organization>
@@ -206,10 +206,6 @@
   </profiles>
 
   <distributionManagement>
-    <site>
-      <id>github</id>
-      <url>scm:git:ssh://git@github.com/soujava/maven-archetype-quickstart.git</url>
-    </site>
     <snapshotRepository>
       <id>ossrh</id>
       <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
