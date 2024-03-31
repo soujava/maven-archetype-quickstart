@@ -52,7 +52,7 @@
 
   <name>Archetype - maven-archetype-quickstart</name>
   <description>Maven archetype - Quickstart Maven Project with Java 21</description>
-
+  <url>https://github.com/soujava/maven-archetype-quickstart.git</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>

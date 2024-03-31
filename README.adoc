@@ -47,7 +47,7 @@ mvn archetype:generate -DarchetypeCatalog=local
 [INFO] Generating project in Interactive mode
 [INFO] No archetype defined. Using maven-archetype-quickstart (org.apache.maven.archetypes:maven-archetype-quickstart:1.0)
 Choose archetype:
-1: local -> org.soujava:maven-archetype-quickstart (Archetype - maven-archetype-quickstart)
+1: local -> br.org.soujava:maven-archetype-quickstart (Archetype - maven-archetype-quickstart)
 Choose a number or apply filter (format: [groupId:]artifactId, case sensitive contains): :
 ----
 
@@ -55,7 +55,7 @@ Choose a number or apply filter (format: [groupId:]artifactId, case sensitive co
 
 [source, bash]
 ----
-mvn archetype:generate -DarchetypeGroupId=org.soujava \
+mvn archetype:generate -DarchetypeGroupId=br.org.soujava \
     -DarchetypeArtifactId=maven-archetype-quickstart \
     -DgroupId=<GROUP ID> \
     -DartifactId=<ARTIFACT ID> \
