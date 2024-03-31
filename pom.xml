@@ -20,7 +20,7 @@
 
   <groupId>br.org.soujava</groupId>
   <artifactId>maven-archetype-quickstart</artifactId>
-  <version>0.0.2</version>
+  <version>0.0.3-SNAPSHOT</version>
   <packaging>maven-archetype</packaging>
 
   <organization>
@@ -46,7 +46,7 @@
     <connection>scm:git:${project.scm.url}</connection>
     <developerConnection>scm:git:${project.scm.url}</developerConnection>
     <url>https://github.com/soujava/maven-archetype-quickstart.git</url><!-- it's required by release processes -->
-    <tag>maven-archetype-quickstart-0.0.2</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <name>Archetype - maven-archetype-quickstart</name>
