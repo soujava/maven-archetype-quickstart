@@ -1,0 +1,84 @@
+
+= Maven archetype - Quickstart Maven Project with Java 21
+:toc: auto
+
+== Introduction
+
+A Maven architype with Java 21 support for facilitate maven project creation.
+
+== How to use it from the sources
+
+. Make sure that you have already configured the following tools:
+.. Git
+.. Java 21
+.. Maven 3.9+
+
+. Clone this repository;
+. Install the archetype locally:
++
+[source, bash]
+----
+mvn clean install
+----
+
+. After you do that, you can go to the target directory and perform the following command:
++
+[source, bash]
+----
+mvn archetype:generate -DarchetypeCatalog=local
+----
+
+. And, the last item on the list will be your locally installed archetype, which you can select by number. Take a look on a sample below:
++
+[source,text]
+----
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ------------------< org.apache.maven:standalone-pom >-------------------
+[INFO] Building Maven Stub Project (No POM) 1
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO]
+[INFO] >>> archetype:3.2.1:generate (default-cli) > generate-sources @ standalone-pom >>>
+[INFO]
+[INFO] <<< archetype:3.2.1:generate (default-cli) < generate-sources @ standalone-pom <<<
+[INFO]
+[INFO]
+[INFO] --- archetype:3.2.1:generate (default-cli) @ standalone-pom ---
+[INFO] Generating project in Interactive mode
+[INFO] No archetype defined. Using maven-archetype-quickstart (org.apache.maven.archetypes:maven-archetype-quickstart:1.0)
+Choose archetype:
+1: local -> org.soujava:maven-archetype-quickstart (Archetype - maven-archetype-quickstart)
+Choose a number or apply filter (format: [groupId:]artifactId, case sensitive contains): :
+----
+
+== How to use it from Maven Repository
+
+[source, bash]
+----
+mvn archetype:generate -DarchetypeGroupId=org.soujava \
+    -DarchetypeArtifactId=maven-archetype-quickstart \
+    -DgroupId=<GROUP ID> \
+    -DartifactId=<ARTIFACT ID> \
+    -Dversion=<VERSION> \
+    -DprojectDescription=<DESCRIPTION> \
+    -Dpackage=<PACKAGE>
+
+----
+
+== Code of Conduct
+
+Take a look at link:CODE_OF_CONDUCT.adoc[here] for more information.
+
+The Code of Conduct of this project is adapted from the link:https://www.contributor-covenant.org[**Contributor Covenant**], version 1.4, available at link:http://contributor-covenant.org/version/1/4[here].
+
+== Contributing
+
+We are very happy you are interested in helping us and there are plenty ways you can do so.
+
+- https://github.com/soujava/maven-archetype-quickstart/issues[**Open an Issue:**]  Recommend improvements, changes and report bugs
+
+- **Open a Pull Request:** If you feel like you can even make changes to our source code and suggest them, just check out our link:CONTRIBUTING.adoc[contributing guide] to learn about the development process, how to suggest bugfixes and improvements.
+
+== Contact
+
+Join the link:https://discord.gg/eAARnH7yrG[SouJava Discord server] and say hello at `#maven-archetype-quickstart` channel!

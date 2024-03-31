@@ -1,0 +1,172 @@
+= Contributing to POM Editor Maven Plugin
+:toc: auto
+
+We are very happy you are interested in helping us and there are plenty ways you can do so. Thanks for your interest in this project.
+
+== Contact
+
+Join the SouJava Discord server and say hello at `#maven-archetype-quickstart` channel.
+
+* https://discord.gg/eAARnH7yrG
+
+== Legal
+
+This project is licensed over link:https://github.com/soujava/pom-editor-maven-plugin/blob/main/LICENSE[**ASF - Apache License**], version 2, so new files must have the ASF version 2 header. For more information, please check out link:https://www.apache.org/licenses/LICENSE-2.0[**Apache license**];
+
+== Developer Certificate of Origin - DCO
+
+One of the requisites to contributing to this project is to add DCO to your commits.
+
+This is a security layer for the project and for the developers. It is mandatory.
+
+Follow one of these two methods to add DCO to your commits:
+
+=== Command line
+
+Follow the steps:
+
+- **Step 1:** Configure your local git environment adding the same name and e-mail configured at your GitHub account. It helps to sign commits manually during reviews and suggestions.
+
+[source, sh]
+----
+git config --global user.name “Name”
+git config --global user.email “email@domain.com.br”
+----
+
+- **Step 2:** Add the Signed-off-by line with the `-s` flag in the git commit command:
+
+[source, sh]
+----
+$ git commit -s -m "This is my commit message"
+----
+or
+[source, sh]
+----
+$ git commit -sm "This is my commit message"
+----
+
+=== GitHub website
+
+You can also manually sign your commits during GitHub reviews and suggestions, follow the steps below:
+
+1.  **Step 1:** When the commit changes box opens, manually type or paste your signature in the comment box, see the example:
+
+[source, text]
+----
+Signed-off-by: Name < e-mail address >
+----
+
+For this method, your name and e-mail must be the same registered on your GitHub account.
+
+
+== Issues
+
+If you found a bug or have an idea, check out the following sections before submitting your contribution.
+
+=== Check the issue tracker
+
+All our issues are centralized in our https://github.com/arrudalabs/pom-editor-maven-plugin[**main repository**], it is quite likely that you will find a topic that is being discussed. Check the https://github.com/arrudalabs/pom-editor-maven-plugin/issues[**open issues**], another good way to start is https://github.com/arrudalabs/pom-editor-maven-plugin/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22[**good first issues**].
+
+=== Open an issue for any new problem
+
+Writing a good issue will help our team better analyze and manage your contributions, therefore, follow the standards and best practices below:
+
+**With the title:**
+
+**Scope - Title Description**
+
+- **Scope:** Add what your issue refers to:
+
+- **https://github.com/arrudalabs/pom-editor-maven-plugin/issues/new?assignees=&labels=bug&template=bug_report.md&title=[Bug report]:** Report a reproducible bug.
+
+- **https://github.com/arrudalabs/pom-editor-maven-plugin/issues/new?assignees=&labels=&template=feature_request.md&title=[Feature request]:** Suggest a new idea for POM Editor Maven Plugin.
+
+> **Example: Feat request - Suggestion for a better user experience**
+
+**With the issue description:**
+
+Try to explain the scenario to us by following these tips:
+
+- **Context:** explain the conditions which led you to write this issue.
+- **Problem or idea:** the context should lead to something, an idea or a problem that you’re facing.
+- **Solution or next step:** this where you move forward. You can engage others (request feedback), assign somebody else to the issue, or simply leave it for further investigation, but you absolutely need to propose a next step towards solving the issue.
+
+== Contribute to the repo
+
+To contribute to the repo one must adhere to the following:
+
+**Conventional commits**
+
+Conventional commits is a specification to standardize
+commit messages. It improves the legibility and the meaning
+of the messages enforcing rules to be followed.
+
+The message should be formatted as shown bellow.
+
+[source]
+----
+<type>[optional scope]: <description>
+
+[optional body]
+
+[optional footer(s)]
+----
+
+
+**Types of Commits:**
+
+- **fix:** Any commit that patches a bug anywhere in the codebase
+- **feat:** Any commit that introduces a new feature or focuses on enhancing the scope of existing features
+- **breaking changes:** Any commit that has a footer "BREAKING CHANGE", or appends a ! after the type/scope, introduces a breaking API change (correlating with MAJOR in Semantic Versioning). A BREAKING CHANGE can be part of commits of any type.
+- **other than fix and feat:** Any commit that consists of the following keywords: `build:`, `chore:`, `ci:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, and others. For other keywords refer to https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional[@commitlint/config-conventional] (based on the Angular convention)
+- **other footers:**<description> may be provided and follow a convention similar to https://git-scm.com/docs/git-interpret-trailers[git trailer format]
+
+**Examples of commits**
+
+- **Regular Commit Message:** This may be used for either fix or feat and can be written as `fix: <message>` or `feat: <message>`
+
+[source]
+----
+fix: add NullPointerException validation
+----
+
+[source]
+----
+feat: supporting GAV parameter
+----
+- **Commit with breaking change**: Example: A new feature being introduced as a breaking change can be written as `feat!: <message>`, this can also simply be written as a regular feat with the *BREAKING CHANGE* appended to it at the end of the commit
+
+[source]
+----
+feat!: replace flag
+----
+
+[source]
+----
+feat: add new flag
+
+BREAKING CHANGE: used records, a feature that requires from Java 17 onwards
+----
+- **Specific breaking change:**: Example: A breaking change introduced with a new feature somewhere in the api can be written as `feat(api)!: <message>`
+
+[source]
+----
+feat(api)!: add a required flag
+----
+- **Changing the docs:** `docs: <message>`
+
+[source]
+----
+docs: add README.md
+----
+- **Regular commit message with specification:** A new feature introduced in the api can be written as `feat(api): <message>`
+
+[source]
+----
+feat(api): add support for pom parent
+----
+
+**Formatting Commit messages**
+
+All commit messages must clearly state the change that takes place. Multiple paragraphs or bullet points explaining the changes in detail are encouraged. The message must contain the link to the issue that it is directed towards.
+If there are other people working on a particular issue which you wanted to work on as well, consider working together. If the commit influences a visual change, screenshots are encouraged

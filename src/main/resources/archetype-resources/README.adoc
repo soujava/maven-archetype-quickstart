@@ -1,0 +1,24 @@
+= ${artifactId}
+
+${projectDescription}
+
+== Installing Java 21 or later
+
+==== Setup your development environment
+
+* Using SDKMAN
+
+. Install [SDKMAN](https://sdkman.io/install)
+. Install Java using SDKMAN -> `sdk install java 21-oracle && sdk use java 21-oracle`
+. Install Maven using SDKMAN -> `sdk install maven 3.9.5 && sdk use maven 3.9.5`
+
+* Install from the binaries
+
+. Get Java 21 [here](https://www.oracle.com/java/technologies/downloads)
+. Get maven 3.9.5 [here](https://dlcdn.apache.org/maven/maven-3/3.9.5/binaries/apache-maven-3.9.5-bin.tar.gz)
+. Add above to your path if necessary.
+
+== Running the project
+
+. `mvn package`
+. `java -jar target/${artifactId}-${version}.jar`
