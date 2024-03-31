@@ -33,7 +33,7 @@ jobs:
     strategy:
       matrix:
         java: [ '21' ]
-    name: Java ${{ matrix.Java }} sample
+    name: Java ${{ matrix.Java }} CI with Maven
     steps:
       - uses: actions/checkout@v4.1.2
       - name: Set up JDK 17
